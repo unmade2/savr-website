@@ -1,0 +1,590 @@
+SAVR
+Brand Voice Guide
+A comprehensive guide to SAVR's brand personality,
+voice attributes, messaging pillars, tone adaptation,
+and style rules across all communications.
+PREPARED BY
+Arrdas Studio  |  arrdas.com
+DATE
+March 2026
+VERSION
+1.0
+STATUS
+Final
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 2
+1. Brand Overview
+SAVR is a hospitality intelligence platform that helps hotels eliminate food waste, predict
+demand, optimise menu pricing, and close the loop between what is wasted and what is served.
+Owned and positioned by Arrdas Studio, with technology built by XAIR, SAVR is India's first
+all-in-one AI-powered kitchen ecosystem for 4-5 star hotel properties.
+The SAVR brand must communicate trust, intelligence, and measurable impact. Every word we
+write should make hotel decision-makers feel that SAVR understands their operations, respects
+their expertise, and delivers results they can quantify on a P&L; statement.
+Brand at a Glance
+Brand Name
+SAVR
+Tagline
+Save Smarter. Serve Better.
+Category
+Hospitality AI / Kitchen Intelligence
+Parent Brand
+Arrdas Studio (arrdas.com)
+Technology Partner
+XAIR (hardware + software development)
+Primary Market
+4-5 star hotels in India
+First Deployment
+Radisson Blu Hotel, Amritsar
+Core Promise
+Turn invisible kitchen losses into visible, measurable savings
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 3
+2. Brand Personality
+If SAVR were a person, it would be the smartest operations consultant you have ever worked
+with — someone who has spent years inside hotel kitchens, understands the pressure of a
+300-cover dinner service, and speaks the language of both chefs and CFOs. SAVR does not
+lecture. It listens, analyses, and presents clear, actionable intelligence that makes your kitchen
+run better tomorrow than it did today.
+SAVR is not a flashy startup selling dreams. It is a calm, capable partner that earns trust through
+precision, transparency, and results. It respects the expertise of hotel professionals and
+amplifies their instincts with data — never replacing judgment, always sharpening it.
+Personality Traits
+Intelligent
+Speaks with authority grounded in data, not hype
+Calm
+Conveys confidence without urgency or pressure
+Practical
+Focuses on outcomes hotel teams can act on today
+Trustworthy
+Transparent about capabilities, honest about limitations
+Respectful
+Honours the expertise of hospitality professionals
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 4
+3. Voice Attributes
+SAVR's voice is defined by five core attributes. These remain constant across all channels and
+contexts. Tone may shift (see Section 6), but these attributes never change.
+1. Intelligent Without Being Technical
+We are: Data-literate, precise, grounded in evidence. We translate complex AI and analytics into
+language that GMs, F&B; Directors, and Executive Chefs understand immediately. We quantify
+impact in rupees, percentages, and kilograms — not in model architectures or algorithm names.
+We are not: Jargon-heavy, condescending, or academic. We never make the reader feel they need a
+data science degree to understand what SAVR does.
+This sounds like: "Your Thursday dinner buffet consistently overproduces paneer dishes by 18%.
+SAVR recommends reducing production by 6 portions and rotating in a lower-cost dal option —
+saving approximately INR 12,000 per week."
+This does NOT sound like: "Our proprietary convolutional neural network achieves 94.7% mAP on
+food waste classification tasks using a ResNet-50 backbone with transfer learning."
+2. Confident Without Being Aggressive
+We are: Assertive about our capabilities and the value we deliver. We state facts, present results,
+and let the numbers build the case. We are proud of being India's first closed-loop kitchen intelligence
+platform.
+We are not: Pushy, salesy, or disparaging of competitors. We never create urgency through fear. We
+never claim to be the only solution — we demonstrate why we are the most complete one.
+This sounds like: "Hotels using SAVR's waste detection module typically see a 30-50% reduction in
+food waste within the first six months. The system pays for itself within the first month of full
+deployment."
+This does NOT sound like: "You CANNOT afford to wait. Every day without SAVR is money down
+the drain. Your competitors are already ahead of you."
+3. Practical and Outcome-Focused
+We are: Everything we communicate ties back to a measurable outcome: cost saved, waste reduced,
+revenue gained, time recovered. We respect that hotel operators are busy and need solutions, not
+slide decks. We lead with what changes for them, not with what our technology can do.
+We are not: Abstract, philosophical, or vision-heavy without substance. We do not talk about
+"transforming the future of hospitality" without showing exactly how.
+This sounds like: "Phase 1 goes live in six weeks. Within four weeks of the dashboard launching,
+you will have complete visibility into waste patterns across every meal period and station."
+This does NOT sound like: "SAVR is revolutionising the hospitality industry with cutting-edge
+artificial intelligence that will transform how hotels think about food forever."
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 5
+4. Warm and Human
+We are: Approachable, empathetic, and collaborative. We speak to hotel teams as partners, not as
+vendors. We acknowledge the complexity of running a hotel kitchen and position SAVR as a tool that
+amplifies human expertise — never replaces it.
+We are not: Overly casual, jokey, or childish. We are warm but professional. We would never use
+slang or emojis in a proposal. We would never undermine the seriousness of a hotel's operations.
+This sounds like: "Your Executive Chef knows which dishes your guests love. SAVR gives them the
+data to prove it — and to spot the patterns they might not see across 300 covers a night."
+This does NOT sound like: "LOL your kitchen is basically throwing money in the bin every day! Let
+SAVR fix that for you."
+5. Sustainability-Conscious Without Being Preachy
+We are: Genuinely committed to reducing food waste and environmental impact. We treat
+sustainability as a business advantage, not a moral obligation. ESG metrics, SDG alignment, and
+carbon reduction are presented as tangible value — not guilt.
+We are not: Lecturing, sanctimonious, or guilt-tripping. We never imply that hotels are irresponsible
+for not having waste tracking. We position SAVR as the tool that makes sustainability measurable,
+reportable, and profitable.
+This sounds like: "SAVR automatically generates ESG-ready data — kilograms of food waste
+diverted, CO2 emissions avoided, and water saved per meal. These metrics feed directly into your
+corporate sustainability reporting and guest-facing communications."
+This does NOT sound like: "The planet is dying and your hotel is part of the problem. Stop wasting
+food NOW. You owe it to future generations."
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 6
+4. Audience Awareness
+Primary Audiences
+Audience
+Role Context
+What They Care About
+How We Speak to Them
+General
+Managers
+P&L; ownership,
+operational
+oversight
+Cost reduction, ROI,
+competitive advantage,
+brand reputation
+Lead with financial impact. Speak
+in lakhs saved, payback periods,
+and operational efficiency gains.
+F&B;
+Directors
+Kitchen operations,
+menu planning,
+staff management
+Waste visibility, production
+accuracy, staff adoption,
+daily operations
+Lead with operational
+improvements. Show how SAVR
+fits into their existing workflow.
+Executive
+Chefs
+Menu creation,
+quality control,
+kitchen culture
+Menu performance data,
+waste patterns, creative
+freedom preserved
+Position as amplifier of their
+expertise. Never suggest AI
+replaces culinary judgment.
+Ownership /
+Asset
+Managers
+Portfolio-level
+performance,
+capital allocation
+Scalability, ESG
+credentials, property
+value, competitive
+positioning
+Lead with portfolio-scale impact.
+Emphasise multi- property
+dashboard and ESG reporting.
+Secondary Audiences
+Procurement Teams
+Compliance, vendor evaluation, contract terms — speak in specifications and deliverables
+IT / Technology Teams
+Integration requirements, data security, infrastructure needs — be precise and technical when asked
+Sustainability Officers
+ESG metrics, SDG alignment, reporting frameworks — lead with measurable environmental impact
+Kitchen Staff
+Ease of use, minimal disruption, training simplicity — be clear, patient, and encouraging
+5. Core Messaging Pillars
+These five pillars define what SAVR consistently communicates. They are listed in priority order.
+Every piece of content should connect to at least one pillar.
+Pillar 1: Measurable Financial Impact
+SAVR saves hotels money — and proves it. Every claim is backed by specific numbers: INR
+saved, waste reduced, revenue gained, payback period achieved. We lead with the P&L; impact
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 7
+because that is what drives purchasing decisions in hospitality.
+"At INR 22,000 per month against projected monthly savings of INR 1-2.5 Lakhs, the
+system pays for itself within the first month of full deployment."
+Pillar 2: Closed-Loop Intelligence
+SAVR is the only platform that connects waste detection to demand forecasting to menu pricing
+to menu optimisation in one integrated system. This closed-loop is our primary technical
+differentiator and should be referenced in every product-focused communication.
+"If butter chicken is consistently wasted at Thursday dinner buffets, SAVR automatically
+reduces Thursday production and suggests menu replacements. Your menu gets
+smarter every week."
+Pillar 3: Built for India
+SAVR is purpose-built for Indian hotel economics, Indian cuisines, Indian supply chains, and
+Indian operational realities. Global competitors were designed for European enterprise budgets
+and Western food categories. SAVR is priced, trained, and deployed for the Indian market.
+"Our AI models are trained on Indian food categories — from dal makhani to paneer
+tikka to regional breakfast items. We are not adapting a European model; we are
+building from Indian hotel kitchens up."
+Pillar 4: All-in-One Simplicity
+Hotels should not need three vendors, three integrations, and three bills to get complete kitchen
+intelligence. SAVR replaces fragmented point solutions with one platform, one dashboard, one
+relationship. This simplicity is both a product advantage and a brand position.
+"Hotels wanting full coverage today would need to buy Winnow for waste tracking,
+DynamEat for pricing, and Delicious Data for forecasting. SAVR replaces all of them."
+Pillar 5: Sustainability as Strategy
+Reducing food waste is both financially smart and environmentally responsible. SAVR positions
+sustainability as a business advantage — ESG metrics that improve guest perception, corporate
+RFP competitiveness, and alignment with global standards like the UN SDGs.
+"What was previously an invisible operational loss becomes a trackable sustainability
+metric — kilograms diverted, CO2 avoided, and energy saved per meal served."
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 8
+6. Tone Spectrum
+The voice attributes remain fixed. Tone adapts based on channel, audience, and context. Think
+of voice as personality and tone as mood — SAVR's personality never changes, but the
+emotional emphasis shifts depending on the situation.
+Tone by Channel
+Channel
+Tone Adaptation
+Example
+Website
+Confident, clear,
+benefit-driven
+Your hotel kitchen is losing lakhs every month. We fix that with
+AI.
+Proposals /
+Sales
+Decks
+Precise, data-rich,
+consulting-grade
+Phase 1 delivers standalone value: waste visibility and 15-20%
+waste reduction within 4 weeks of go-live.
+Email
+Outreach
+Personal, helpful,
+respectful of time
+I wanted to share a quick overview of how SAVR works — I think
+it is relevant to what you are building at [Hotel].
+LinkedIn /
+Social
+Thought-provoking,
+concise,
+industry-aware
+Indian hotels lose INR 32-192L annually to preventable food
+waste. Most do not know where it is happening.
+Dashboard /
+Product UI
+Clear,
+action-oriented,
+encouraging
+Thursday dinner waste was down 22% this week. Your team is
+making measurable progress.
+Support /
+Onboarding
+Patient,
+step-by-step,
+welcoming
+Let us walk through the dashboard together. This screen shows
+your waste patterns by meal period.
+Press / PR
+Factual, measured,
+newsworthy
+Arrdas Studio today announced the deployment of India's first
+closed-loop hospitality AI system.
+Tone by Situation
+Situation
+Tone Shift
+Guiding Principle
+Product launch
+Excited, forward-looking
+Celebrate the milestone but stay grounded in
+specifics
+Client success /
+case study
+Celebratory, crediting the
+client
+The hotel is the hero; SAVR is the tool they used
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 9
+Situation
+Tone Shift
+Guiding Principle
+Incident or system
+issue
+Transparent, accountable,
+calm
+Acknowledge immediately, explain clearly, fix
+quickly
+Pricing
+conversation
+Honest, value-framed,
+flexible
+Always anchor price to ROI, never apologise for
+cost
+Competitive
+comparison
+Confident, fact-based, fair
+State facts, never disparage — let the comparison
+speak
+Onboarding new
+property
+Welcoming, encouraging,
+patient
+Make the team feel supported, not surveilled
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 10
+7. Style Rules
+Grammar and Mechanics
+Rule
+SAVR Standard
+Example
+Oxford comma
+Yes, always
+waste detection, demand forecasting, and menu
+pricing
+Headings
+Sentence case
+How it works (not How It Works)
+Contractions
+Use in conversational
+channels; avoid in proposals
+and formal docs
+Website: "We're building..." Proposal: "We are
+building..."
+Numbers
+Spell out one through nine;
+numerals for 10+
+four modules, 13 competitors, 300 covers
+Currency
+INR followed by amount; use L
+for Lakhs, Cr for Crore
+INR 22,000/month, INR 3.7L, INR 1.2Cr
+Percentages
+Numerals + %
+30-50% waste reduction
+Date format
+DD Month YYYY
+30 March 2026
+Time format
+12-hour with AM/PM
+3:00 PM
+Em dash
+Spaces on both sides
+one platform — four modules
+Lists in body
+text
+No periods on fragments;
+periods on full sentences
+Includes: waste detection, demand forecasting,
+and dynamic pricing
+Formatting Conventions
+• Bold for emphasis — use sparingly. If everything is bold, nothing is.
+• Italic for publication titles, technical terms on first use, and example phrases.
+• Link text must be descriptive — never use "click here" or "learn more" as standalone links.
+• Heading hierarchy: H1 for page title, H2 for sections, H3 for subsections. Never skip levels.
+• Exclamation marks: maximum one per page. Never more than one in a row.
+• ALL CAPS: only for product tier names (SILVER, GOLD, PLATINUM) and acronyms. Never for
+emphasis.
+• Emojis: never in proposals, documents, or formal communications. Permitted sparingly on social
+media.
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 11
+8. Terminology
+Preferred Terms
+Use This
+Not This
+Notes
+SAVR
+Savr, savr, S.A.V.R.
+Always all caps in running text
+platform
+product, tool, software, app
+SAVR is a platform, not an app
+hotel property
+hotel, client site
+"Property" is standard hospitality language
+waste detection
+waste tracking, waste
+monitoring
+Detection implies intelligence; tracking is
+passive
+closed-loop
+intelligence
+feedback loop, cycle
+Our specific differentiator — always
+hyphenate closed-loop
+kitchen intelligence
+kitchen analytics, kitchen AI
+Intelligence positions SAVR as strategic, not
+just analytical
+right-size production
+reduce overproduction
+Positive framing — we optimise, not just cut
+food waste
+food loss
+"Waste" is the industry standard; "loss" is
+broader and less specific
+demand forecasting
+demand prediction
+Forecasting is the accepted industry term
+dynamic menu pricing
+automatic pricing, AI pricing
+Emphasise menu context, not just the
+automation
+smart menu
+intelligence
+menu optimisation
+Our proprietary module name — always
+capitalise as a module
+deploy / deployment
+install / installation
+Deployment implies a complete system;
+installation is just hardware
+ESG-ready data
+sustainability data, green
+data
+ESG is the established corporate reporting
+framework
+hotel teams
+hotel staff, hotel employees
+"Teams" is more respectful and collaborative
+Product and Module Names
+SAVR has four modules. Each has an official name that should be used consistently:
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 12
+Module Name
+Description
+Module
+1
+AI Waste Detection
+Computer vision cameras that identify, classify, and weigh
+discarded food
+Module
+2
+Demand Forecasting
+ML models trained on historical data to predict covers and
+production needs
+Module
+3
+Dynamic Menu Pricing
+AI-driven pricing recommendations based on margins, demand,
+and waste data
+Module
+4
+Smart Menu
+Intelligence
+Closed-loop system connecting waste data to automated menu
+optimisation
+Competitor References
+When referencing competitors, always be factual and fair. Never disparage. Use comparisons to
+highlight SAVR's completeness, not competitors' failures.
+Winnow
+Refer to as a "waste tracking solution" — factual, not dismissive
+Leanpath
+Refer to as a "waste management platform" — acknowledge their experience (since 2004)
+KITRO
+Refer to as a "waste detection solution" — note their hardware-based approach
+DynamEat
+Refer to as a "dynamic pricing platform" — closest to our pricing module
+Delicious Data
+Refer to as a "demand forecasting solution" — acknowledge their software-only approach
+Generic framing
+"Existing solutions address one piece of the puzzle. SAVR connects all four."
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 13
+9. Inclusive Language
+Gender-neutral language
+Use "they/them" for unknown individuals. "The GM reviewed their dashboard" not "The GM reviewed
+his dashboard."
+Person-first language
+"Hotels with limited kitchen staff" not "understaffed hotels."
+Avoid ableist language
+Do not use "blind spot," "lame," or "crazy" in any communications.
+Cultural sensitivity
+SAVR operates in India's diverse hospitality market. Avoid idioms that do not translate across
+regions. Be mindful of dietary, religious, and cultural contexts when discussing food categories.
+Difficulty framing
+Use "straightforward" instead of "easy." What is simple for a tech-savvy GM may not be for a kitchen
+porter. Respect the full range of users.
+Avoid blame language
+Never imply that hotels are at fault for food waste. The system was invisible before SAVR. We
+provide visibility, not judgment.
+10. Visual Identity Quick Reference
+While this document focuses on voice and language, the following visual identity rules ensure
+consistency between written and visual brand expressions.
+Logo
+SAVR wordmark + intertwined loop icon. Two lockups:
+horizontal (icon + wordmark) and stacked (icon over wordmark).
+Primary Colour
+SAVR Green Dark: #1B5E4B — used for logo, headings, emphasis
+Secondary Colour SAVR Green Mid: #2E8B6E — used for secondary elements, hover states
+Accent Colour
+Arrdas Orange: #F65026 — used sparingly for dividers, CTAs, highlights only
+Typography
+Inter (or Helvetica as fallback). Bold for headers, Regular for body.
+Line height 1.4-1.6. Left-aligned only.
+Layout Aesthetic
+Premium consulting grade. Generous whitespace. No gradients,
+shadows, or decorative elements. Clean, structured, scannable.
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 14
+Photography
+Real kitchen environments preferred over stock. Mockups acceptable
+for pre-deployment marketing. Always show the product in context.
+Icon Style
+Monoline, simple, black or SAVR Green. No illustrations or cartoons
+in professional materials.
+
+---PAGE---
+SAVR
+Brand Voice Guide  |  March 2026
+Confidential  |  Arrdas Studio  |  arrdas.com
+Page 15
+Contact
+For questions about SAVR brand voice, messaging, or content review, contact:
+BRAND OWNER
+Prabhnoor Singh, Founder
+Arrdas Studio
+CONTACT
+singh@arrdas.com
+arrdas.com
+OFFICE
+Punjab, India
+This document is confidential and intended for internal use by Arrdas Studio and approved partners. Version 1.0
+— March 2026.

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "video-prompting-guide": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "ca274a72ba3cc3ef12606f7453092b4900d128b2e76ee5e5316c64c5c77206fd"
+    }
+  }
+}
