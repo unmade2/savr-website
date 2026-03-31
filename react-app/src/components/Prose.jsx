@@ -1,0 +1,66 @@
+import { useEffect, useRef, useState } from 'react'
+
+const paragraphs = [
+  "India's hospitality sector faces rising input costs. With LPG, edible oils, and proteins becoming more expensive, food waste is bleeding margins.",
+  "Industry estimates suggest 4–16% of food purchased by Indian hotels ends up as waste. For a premium property with INR 8–12 Cr annual F&B revenue, that means losing INR 32–192 Lakhs annually to preventable inefficiencies.",
+  "Most hotel kitchens still operate blind. General Managers and F&B Directors know costs are rising, but lack granular, real-time visibility into exactly where waste occurs and how to adjust menus dynamically based on actual demand.",
+  "SAVR is India's first all-in-one hospitality intelligence platform. We replace fragmented point solutions with a unified ecosystem spanning AI Waste Detection, Demand Forecasting, Dynamic Menu Pricing, and Smart Menu Intelligence.",
+  "Our computer vision cameras automatically identify, classify, and weigh every discarded item. This completely touchless operation generates real-time dashboards detailing exactly what is being wasted and why—enabling an immediate 30–50% food waste reduction.",
+  "Our Demand Forecasting module uses your historical data, occupancy rates, and local patterns to right-size production. We accurately predict how many covers to expect per meal period, saving 15–25% in overproduction costs instantly.",
+  "SAVR's Dynamic Menu Pricing intelligently analyses contribution margins, prep time, and demand patterns to confidently recommend optimal pricing for each dish. As a result, slow movers are rotated out, while high-demand items deliver maximum profitability.",
+  "We close the loop: waste detection data feeds directly into menu planning. If butter chicken is consistently wasted, the system automatically suggests replacements so your menu gets smarter every single week without relying purely on chef intuition.",
+  "Built specifically for Indian hotel economics, SAVR delivers measurable P&L impact. With our OPEX subscription model, the system pays for itself within the first month of full deployment."
+]
+
+function AnimatedParagraph({ text, delay }) {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.15 }
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <p
+      ref={ref}
+      className={`
+        transition-all duration-700 ease-out
+        text-neutral-black
+        ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}
+      `}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {text}
+    </p>
+  )
+}
+
+export default function Prose() {
+  return (
+    <section className="flex justify-center px-[var(--spacing-md)] mt-[2.4rem] mb-[16.4rem] md:mb-[24rem]">
+      <div
+        className="w-full max-w-[37.5rem] md:max-w-[51rem] text-center mx-auto space-y-[1em]"
+        style={{
+          fontFamily: 'var(--font-body)',
+          fontSize: '2rem',
+          lineHeight: '1.32',
+          fontWeight: 350,
+        }}
+      >
+        {paragraphs.map((text, i) => (
+          <AnimatedParagraph key={i} text={text} delay={i * 50} />
+        ))}
+      </div>
+    </section>
+  )
+}
