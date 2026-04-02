@@ -30,11 +30,11 @@ export default function Prose() {
   return (
     <section className="flex justify-center px-[var(--spacing-md)] mt-[2.4rem] mb-[16.4rem] md:mb-[24rem]">
       <div
-        className="w-full max-w-[37.5rem] md:max-w-[51rem] text-center mx-auto space-y-[1em]"
+        className="w-full max-w-[37.5rem] md:max-w-[51rem] text-center mx-auto space-y-[2.4rem]"
         style={{
           fontFamily: 'var(--font-body)',
           fontSize: '2rem',
-          lineHeight: '1.32',
+          lineHeight: '2.8rem',
           fontWeight: 350,
         }}
       >
