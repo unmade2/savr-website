@@ -5,8 +5,13 @@ import Prose from './components/Prose'
 import SignUp from './components/SignUp'
 import FloatingCta from './components/FloatingCta'
 import Footer from './components/Footer'
+import useSmoothScroll from './hooks/useSmoothScroll'
+import 'lenis/dist/lenis.css'
 
 function App() {
+  // Initialise Lenis smooth-scroll
+  useSmoothScroll()
+
   return (
     <>
       <Header />
