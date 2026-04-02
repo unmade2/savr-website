@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 const paragraphs = [
   "India's hospitality sector faces rising input costs. With LPG, edible oils, and proteins becoming more expensive, food waste is bleeding margins.",
@@ -12,35 +13,45 @@ const paragraphs = [
   "Built specifically for Indian hotel economics, SAVR delivers measurable P&L impact. With our OPEX subscription model, the system pays for itself within the first month of full deployment."
 ]
 
-function AnimatedParagraph({ text, delay }) {
-  const ref = useRef(null)
-  const [visible, setVisible] = useState(false)
+/* ─── Single word whose opacity is driven by scroll progress ─── */
+function ScrollWord({ word, progress, range }) {
+  const opacity = useTransform(progress, range, [0.12, 1])
+  return (
+    <motion.span style={{ opacity }} className="inline">
+      {word}{' '}
+    </motion.span>
+  )
+}
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.15 }
-    )
-    if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [])
+/* ─── One paragraph: tracks its own scroll position ─── */
+function ScrollParagraph({ text }) {
+  const ref = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // starts when paragraph top hits bottom of viewport,
+    // ends when paragraph bottom passes 40% from top of viewport
+    offset: ['start 0.95', 'start 0.4'],
+  })
+
+  const words = text.split(' ')
+  const totalWords = words.length
 
   return (
-    <p
-      ref={ref}
-      className={`
-        transition-all duration-700 ease-out
-        text-neutral-black
-        ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}
-      `}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {text}
+    <p ref={ref} className="text-neutral-black">
+      {words.map((word, i) => {
+        // Each word occupies a small slice of the 0→1 scroll range
+        const start = i / totalWords
+        const end = start + 1 / totalWords
+        return (
+          <ScrollWord
+            key={i}
+            word={word}
+            progress={scrollYProgress}
+            range={[start, end]}
+          />
+        )
+      })}
     </p>
   )
 }
@@ -49,16 +60,16 @@ export default function Prose() {
   return (
     <section className="flex justify-center px-[var(--spacing-md)] mt-[2.4rem] mb-[16.4rem] md:mb-[24rem]">
       <div
-        className="w-full max-w-[37.5rem] md:max-w-[51rem] text-center mx-auto space-y-[1em]"
+        className="w-full max-w-[37.5rem] md:max-w-[51rem] text-center mx-auto space-y-[2.4rem]"
         style={{
           fontFamily: 'var(--font-body)',
           fontSize: '2rem',
-          lineHeight: '1.32',
+          lineHeight: '2.8rem',
           fontWeight: 350,
         }}
       >
         {paragraphs.map((text, i) => (
-          <AnimatedParagraph key={i} text={text} delay={i * 50} />
+          <ScrollParagraph key={i} text={text} />
         ))}
       </div>
     </section>
