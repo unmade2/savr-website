@@ -17,8 +17,8 @@ const paragraphs = [
 function ScrollWord({ word, progress, range }) {
   const opacity = useTransform(progress, range, [0.12, 1])
   return (
-    <motion.span style={{ opacity }} className="inline-block mr-[0.3em]">
-      {word}
+    <motion.span style={{ opacity }} className="inline">
+      {word}{' '}
     </motion.span>
   )
 }
