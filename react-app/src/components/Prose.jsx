@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 const paragraphs = [
   "India's hospitality sector faces rising input costs. With LPG, edible oils, and proteins becoming more expensive, food waste is bleeding margins.",
@@ -12,17 +13,46 @@ const paragraphs = [
   "Built specifically for Indian hotel economics, SAVR delivers measurable P&L impact. With our OPEX subscription model, the system pays for itself within the first month of full deployment."
 ]
 
-function AnimatedParagraph({ text, delay }) {
+/* ─── Single word whose opacity is driven by scroll progress ─── */
+function ScrollWord({ word, progress, range }) {
+  const opacity = useTransform(progress, range, [0.12, 1])
   return (
-    <motion.p
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.7, ease: "easeOut", delay: delay / 1000 }}
-      className="text-neutral-black"
-    >
-      {text}
-    </motion.p>
+    <motion.span style={{ opacity }} className="inline-block mr-[0.3em]">
+      {word}
+    </motion.span>
+  )
+}
+
+/* ─── One paragraph: tracks its own scroll position ─── */
+function ScrollParagraph({ text }) {
+  const ref = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // starts when paragraph top hits bottom of viewport,
+    // ends when paragraph bottom passes 40% from top of viewport
+    offset: ['start 0.95', 'start 0.4'],
+  })
+
+  const words = text.split(' ')
+  const totalWords = words.length
+
+  return (
+    <p ref={ref} className="text-neutral-black">
+      {words.map((word, i) => {
+        // Each word occupies a small slice of the 0→1 scroll range
+        const start = i / totalWords
+        const end = start + 1 / totalWords
+        return (
+          <ScrollWord
+            key={i}
+            word={word}
+            progress={scrollYProgress}
+            range={[start, end]}
+          />
+        )
+      })}
+    </p>
   )
 }
 
@@ -39,7 +69,7 @@ export default function Prose() {
         }}
       >
         {paragraphs.map((text, i) => (
-          <AnimatedParagraph key={i} text={text} delay={i * 50} />
+          <ScrollParagraph key={i} text={text} />
         ))}
       </div>
     </section>
