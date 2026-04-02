@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { motion } from 'framer-motion'
 
 const paragraphs = [
   "India's hospitality sector faces rising input costs. With LPG, edible oils, and proteins becoming more expensive, food waste is bleeding margins.",
@@ -13,35 +13,16 @@ const paragraphs = [
 ]
 
 function AnimatedParagraph({ text, delay }) {
-  const ref = useRef(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.15 }
-    )
-    if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <p
-      ref={ref}
-      className={`
-        transition-all duration-700 ease-out
-        text-neutral-black
-        ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}
-      `}
-      style={{ transitionDelay: `${delay}ms` }}
+    <motion.p
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: delay / 1000 }}
+      className="text-neutral-black"
     >
       {text}
-    </p>
+    </motion.p>
   )
 }
 
