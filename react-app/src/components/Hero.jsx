@@ -1,10 +1,15 @@
-import { useState, useEffect, useRef } from 'react'
-import heroMobile from '../assets/hero_mobile.jpg'
-import logoAnimation from '../assets/logo_animation.mp4'
+import { useState, useEffect } from 'react'
+import hero1 from '../assets/hero 1.webp'
+import hero2 from '../assets/hero 2.webp'
+import hero3 from '../assets/hero 3.webp'
+import hero4 from '../assets/hero 4.webp'
+import hero5 from '../assets/hero 5.webp'
+
+const heroImages = [hero1, hero2, hero3, hero4, hero5]
 
 export default function Hero() {
   const [showScrollText, setShowScrollText] = useState(true)
-  const videoRef = useRef(null)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,41 +20,27 @@ export default function Hero() {
   }, [])
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {})
-    }
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length)
+    }, 5000) // Change image every 5 seconds
+    return () => clearInterval(interval)
   }, [])
 
   return (
     <section className="relative w-full min-h-[100svh] md:portrait:aspect-video md:portrait:h-auto md:portrait:min-h-[unset] flex justify-center px-[var(--spacing-md)] overflow-hidden text-white">
       {/* Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        {/* Poster image */}
-        <picture className="absolute inset-0 w-full h-full">
-          <source
-            media="(min-width: 768px)"
-            srcSet="https://cdn.sanity.io/images/w2mhvsaj/production/80bf2389202e2f096b05570bfb4a0c1f91e2c423-1920x1080.jpg?fm=webp&q=75"
-          />
+        {/* Slideshow background */}
+        {heroImages.map((src, index) => (
           <img
-            className="w-full h-full object-cover"
-            src={heroMobile}
+            key={src}
+            src={src}
             alt=""
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
           />
-        </picture>
-
-        {/* Video overlay */}
-        <video
-          ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
-          disableRemotePlayback
-          muted
-          loop
-          playsInline
-          autoPlay
-          preload="auto"
-        >
-          <source type="video/mp4" src={logoAnimation} />
-        </video>
+        ))}
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-true-black/20" style={{ background: 'linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.2) 100%), rgba(0,0,0,0.2)' }} />
