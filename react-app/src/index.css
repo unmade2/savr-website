@@ -3,6 +3,26 @@
 
 @import "tailwindcss";
 
+/* ─── shadcn CSS Variables (mapped to SAVR brand) ─── */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 8%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 9% 46%;
+  --accent: 220 14% 96%;
+  --accent-foreground: 0 0% 8%;
+  --primary: 161 60% 22%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 0 0% 8%;
+  --destructive: 4 67% 57%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 161 60% 22%;
+  --radius: 0.625rem;
+}
+
 /* ─── Tailwind v4 Theme ─── */
 @theme {
   /* Colors */
@@ -57,6 +77,18 @@
   @keyframes pulse-soft {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.6; }
+  }
+
+  @keyframes scrollWheel {
+    0% { opacity: 1; transform: translateY(0); }
+    40% { opacity: 0; transform: translateY(12px); }
+    60% { opacity: 0; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounceDown {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50% { transform: translateY(6px); opacity: 1; }
   }
 }
 
@@ -113,11 +145,12 @@ a {
   color: inherit;
 }
 
-img, video {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
+@layer base {
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 svg {
