@@ -78,6 +78,18 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.6; }
   }
+
+  @keyframes scrollWheel {
+    0% { opacity: 1; transform: translateY(0); }
+    40% { opacity: 0; transform: translateY(12px); }
+    60% { opacity: 0; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounceDown {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50% { transform: translateY(6px); opacity: 1; }
+  }
 }
 
 /* ─── Responsive Spacing ─── */
@@ -133,10 +145,12 @@ a {
   color: inherit;
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
+@layer base {
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 svg {

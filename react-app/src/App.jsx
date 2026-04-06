@@ -2,6 +2,7 @@ import { FloatingHeader } from './components/ui/floating-header'
 import Hero from './components/Hero'
 import Headline from './components/Headline'
 import Prose from './components/Prose'
+import Features from './components/Features'
 import SignUp from './components/SignUp'
 import FloatingCta from './components/FloatingCta'
 import Footer from './components/Footer'
@@ -25,6 +26,9 @@ function App() {
 
           {/* Prose Section */}
           <Prose />
+
+          {/* Features Section */}
+          <Features />
 
           {/* Sign Up Section */}
           <SignUp />
