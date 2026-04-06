@@ -33,15 +33,13 @@ export function FloatingHeader() {
   return (
     <header
       className={cn(
-        'fixed top-4 left-1/2 -translate-x-1/2 z-[1000]',
-        'w-[calc(100%-2rem)] rounded-2xl',
+        'fixed top-0 left-0 right-0 z-[1000]',
+        'w-full',
         'transition-all duration-500 ease-[cubic-bezier(0.24,0.42,0.42,0.92)]',
-        'bg-white/50 border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.08)]',
-        'backdrop-blur-[20px] backdrop-saturate-[180%]',
       )}
     >
-      <nav className="mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo */}
+      <nav className="mx-auto flex items-center justify-between px-8 py-5 max-w-[1400px]">
+        {/* Logo — standalone, no background */}
         <a
           href="/"
           className="flex items-center gap-2 no-underline shrink-0"
@@ -49,19 +47,29 @@ export function FloatingHeader() {
           <img
             src={logoFull}
             alt="SAVR Logo"
-            style={{ height: '44px', width: 'auto' }}
+            style={{ height: '40px', width: 'auto' }}
             className="block transition-all duration-300"
           />
         </a>
 
-        {/* Desktop nav links */}
-        <div className="hidden items-center gap-2 lg:flex">
+        {/* Center nav links — own pill container */}
+        <div
+          className={cn(
+            'hidden items-center gap-1 lg:flex',
+            'px-2 py-1.5 rounded-full',
+            'bg-white/70 backdrop-blur-[16px] border border-black/[0.06]',
+            'shadow-[0_2px_12px_rgba(0,0,0,0.06)]',
+          )}
+        >
           {links.map((link) => (
             <a
               key={link.label}
               className={cn(
-                buttonVariants({ variant: 'ghost', size: 'default' }),
-                'rounded-full font-normal text-[15px] text-neutral-700 hover:text-neutral-900 hover:bg-black/5',
+                'px-5 py-2 rounded-full',
+                'text-[14px] font-medium leading-none tracking-[0.01em]',
+                'no-underline whitespace-nowrap',
+                'transition-all duration-200',
+                'text-neutral-700 hover:text-neutral-900 hover:bg-black/[0.06]',
               )}
               href={link.href}
             >
@@ -70,17 +78,18 @@ export function FloatingHeader() {
           ))}
         </div>
 
-        {/* Right side — CTA + mobile menu */}
+        {/* CTA — standalone pill, no shared background */}
         <div className="flex items-center gap-3">
           <a
             href="#sign-up"
             className={cn(
-              'inline-flex items-center justify-center',
+              'hidden lg:inline-flex items-center justify-center',
               'h-11 px-7 rounded-full',
-              'text-[15px] font-medium leading-none',
+              'text-[14px] font-medium leading-none tracking-[0.01em]',
               'whitespace-nowrap no-underline',
               'transition-all duration-300',
-              'bg-[#155c4b] text-white hover:bg-[#0e3f34] shadow-[0_2px_12px_rgba(21,92,75,0.25)]',
+              'bg-[#155c4b] text-white hover:bg-[#0e3f34]',
+              'shadow-[0_2px_12px_rgba(21,92,75,0.25)]',
             )}
           >
             Request Access
@@ -92,7 +101,7 @@ export function FloatingHeader() {
               variant="outline"
               onClick={() => setOpen(!open)}
               className={cn(
-                'lg:hidden rounded-full border border-black/10 text-neutral-700 bg-white/50 hover:bg-black/5',
+                'lg:hidden rounded-full border border-black/10 text-neutral-700 bg-white/60 backdrop-blur-md hover:bg-black/5',
               )}
             >
               <MenuIcon className="size-4" />
