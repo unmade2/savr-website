@@ -1,4 +1,4 @@
-import Header from './components/Header'
+import { FloatingHeader } from './components/ui/floating-header'
 import Hero from './components/Hero'
 import Headline from './components/Headline'
 import Prose from './components/Prose'
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <FloatingHeader />
       <main className="relative z-5 flex flex-1 flex-col overflow-clip">
         <div className="flex-1 overflow-clip">
           {/* Hero Section */}
