@@ -34,15 +34,13 @@ export function FloatingHeader() {
     <header
       className={cn(
         'fixed top-4 left-1/2 -translate-x-1/2 z-[1000]',
-        'w-[calc(100%-2rem)] max-w-3xl rounded-2xl',
+        'w-[calc(100%-2rem)] rounded-2xl',
         'transition-all duration-500 ease-[cubic-bezier(0.24,0.42,0.42,0.92)]',
-        scrolled
-          ? 'bg-white/80 border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.12)]'
-          : 'bg-white/10 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.10)]',
+        'bg-white/50 border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.08)]',
         'backdrop-blur-[20px] backdrop-saturate-[180%]',
       )}
     >
-      <nav className="mx-auto flex items-center justify-between px-4 py-2.5">
+      <nav className="mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a
           href="/"
@@ -51,25 +49,19 @@ export function FloatingHeader() {
           <img
             src={logoFull}
             alt="SAVR Logo"
-            style={{ height: '36px', width: 'auto' }}
-            className={cn(
-              'block transition-all duration-300',
-              scrolled ? '' : 'brightness-0 invert',
-            )}
+            style={{ height: '44px', width: 'auto' }}
+            className="block transition-all duration-300"
           />
         </a>
 
         {/* Desktop nav links */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           {links.map((link) => (
             <a
               key={link.label}
               className={cn(
-                buttonVariants({ variant: 'ghost', size: 'sm' }),
-                'rounded-full font-normal',
-                scrolled
-                  ? 'text-neutral-700 hover:text-neutral-900 hover:bg-black/5'
-                  : 'text-white/80 hover:text-white hover:bg-white/10',
+                buttonVariants({ variant: 'ghost', size: 'default' }),
+                'rounded-full font-normal text-[15px] text-neutral-700 hover:text-neutral-900 hover:bg-black/5',
               )}
               href={link.href}
             >
@@ -79,18 +71,16 @@ export function FloatingHeader() {
         </div>
 
         {/* Right side — CTA + mobile menu */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <a
             href="#sign-up"
             className={cn(
               'inline-flex items-center justify-center',
-              'h-9 px-5 rounded-full',
-              'text-[13px] font-medium leading-none',
+              'h-11 px-7 rounded-full',
+              'text-[15px] font-medium leading-none',
               'whitespace-nowrap no-underline',
               'transition-all duration-300',
-              scrolled
-                ? 'bg-[#155c4b] text-white hover:bg-[#0e3f34] shadow-[0_2px_12px_rgba(21,92,75,0.25)]'
-                : 'bg-white text-[#155c4b] hover:bg-white/90 shadow-[0_2px_12px_rgba(255,255,255,0.15)]',
+              'bg-[#155c4b] text-white hover:bg-[#0e3f34] shadow-[0_2px_12px_rgba(21,92,75,0.25)]',
             )}
           >
             Request Access
@@ -102,10 +92,7 @@ export function FloatingHeader() {
               variant="outline"
               onClick={() => setOpen(!open)}
               className={cn(
-                'lg:hidden rounded-full border',
-                scrolled
-                  ? 'border-black/10 text-neutral-700 bg-white/50 hover:bg-black/5'
-                  : 'border-white/20 text-white bg-white/10 hover:bg-white/20',
+                'lg:hidden rounded-full border border-black/10 text-neutral-700 bg-white/50 hover:bg-black/5',
               )}
             >
               <MenuIcon className="size-4" />
