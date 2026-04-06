@@ -4,7 +4,6 @@ import Headline from './components/Headline'
 import Prose from './components/Prose'
 import Features from './components/Features'
 import SignUp from './components/SignUp'
-import FloatingCta from './components/FloatingCta'
 import Footer from './components/Footer'
 import useSmoothScroll from './hooks/useSmoothScroll'
 import 'lenis/dist/lenis.css'
@@ -35,7 +34,6 @@ function App() {
         </div>
       </main>
       <Footer />
-      <FloatingCta />
     </>
   )
 }

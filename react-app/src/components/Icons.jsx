@@ -38,10 +38,3 @@ export function LinkedInIcon() {
   )
 }
 
-export function PlayIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '2.4rem', minWidth: '2.4rem', height: '2.4rem' }}>
-      <path d="M8 19V5L19 12L8 19Z" fill="currentcolor"/>
-    </svg>
-  )
-}
